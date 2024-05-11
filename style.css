@@ -1,5 +1,77 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Meddon&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* styling homepage */
+body {
+    background-color:#FAF0E6 ;
+}
 .banner_text h3 {
     font-family: "Meddon", cursive;
+}
+.banner_text h1,h4 {
+    font-family: "Inter", sans-serif;
+}
+
+.card {
+    border: none;
+    background: #FAF0E6;
+    border: 3px solid #3B2621;
+}
+
+.card img {
+    height: 180px;
+    padding: 15px;
+
+}
+
+.product-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    padding-top: 190px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.pagination {
+    justify-content: left;
+    padding: 10px;
+    color: #001804;
+}
+.pagination .page-link {
+    color: #001804;
+}
+
+/* ulasan */
+.ulasan-box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.ulasan-box {
+    width: 250px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    border: 2px solid #001804;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.profile-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.reviews {
+    color: #001804;
+    margin-top: 5px;
+}
+.fas, .far {
+    color:  #001804; /* Color for the star ratings */
 }
