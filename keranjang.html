@@ -11,6 +11,38 @@
         .img-fluid {
             object-fit: cover;
         }
+
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-footer {
+            border-top: none;
+        }
+
+        .modal-content {
+            color: #000;
+            background-color: #fff8f0;
+            border-radius: 12px;
+        }
+
+        .modal-body p {
+            color: #000;
+        }
+
+        .btn-secondary {
+            background-color: #3B2621;
+            /* Gray color for the 'Kembali' button */
+            color: white;
+            border-color: #bfbfbf;
+        }
+
+        .btn-danger {
+            background-color:white ;
+            /* Red color for the 'Batalkan Pesanan' button */
+            color: #d43f3a;
+            border-color: #d43f3a;
+        }
     </style>
 </head>
 
@@ -27,25 +59,27 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto fw-semibold gap-4">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                        <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Pesan Antar</a>
+                        <a class="nav-link active" href="status-pesanan.html">Pesan Antar</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Kursus Barista</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Booking Meja</a>
+                        <a class="nav-link active" href="reservasi.html">Reservasi</a>
                     </li>
                 </ul>
                 <div class="d-flex align-items-center">
                     <!-- Shopping cart icon -->
-                    <a style="color: #3B2621;" href="#"><i class="fas fa-shopping-cart profile-icon me-2"></i></a>
-                    <!-- Profile icon and name -->
-                    <a style="color: #3B2621;" href="#"><i class="fas fa-user-circle profile-icon"></i></a>
-                    <span class="profile-name ms-2">Alexandro</span>
-                </div>
+                    <a style="color: #3B2621;" href="keranjang.html"><i class="fas fa-shopping-cart profile-icon me-2"></i></a>
+                    <!-- Profile icon and name as a single clickable link -->
+                    <a href="bio.html" style="color: #3B2621; text-decoration: none; display: flex; align-items: center;">
+                      <i class="fas fa-user-circle profile-icon"></i>
+                      <span class="profile-name ms-2">Alexandro</span>
+                    </a>
+                  </div>
             </div>
         </div>
     </nav>
@@ -71,10 +105,9 @@
                                 </div>
                                 <div>
                                     <div class="d-flex align-items-center">
-                                        <button class="btn btn-outline-secondary btn-sm m-2" data-bs-toggle="modal" data-bs-target="#productModal"><i
-                                                class="fas fa-pencil-alt"></i></button>
-                                        <button class="btn btn-outline-danger btn-sm"><i
-                                                class="fas fa-trash"></i></button>
+                                        <button class="btn btn-outline-secondary btn-sm m-2" data-bs-toggle="modal"
+                                            data-bs-target="#productModal"><i class="fas fa-pencil-alt"></i></button>
+                                        <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#cancelOrderModal"><i class="fas fa-trash"></i></button>
                                     </div>
                                     <div class="text-dark fw-bold mt-2">Rp95.000</div>
                                 </div>
@@ -111,7 +144,8 @@
                         <p>Biaya kemasan: Rp0</p>
                         <p>Total: Rp35.000</p>
                         <div class="d-grid gap-2">
-                            <button class="btn text-light" type="button" style="background-color: #3B2621;">Lanjutkan ke Pembayaran</button>
+                            <a href="payment.html" class="btn text-light" type="button" style="background-color: #3B2621;">Lanjutkan ke
+                                Pembayaran</a>
                         </div>
                     </div>
                 </div>
@@ -124,11 +158,14 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-target="#confirmationModal"
+                        data-bs-toggle="modal"></button>
                 </div>
                 <div class="modal-body">
+                    <!-- Content -->
                     <div class="d-flex align-items-center mb-3">
-                        <img src="path_to_your_coffee_image.jpg" alt="Espresso Double" style="width: 60px; height: 60px; margin-right: 15px;">
+                        <img src="path_to_your_coffee_image.jpg" alt="Espresso Double"
+                            style="width: 60px; height: 60px; margin-right: 15px;">
                         <strong>Espresso Double</strong>
                     </div>
                     <div class="row g-3">
@@ -150,19 +187,41 @@
                     </div>
                     <div class="mb-3">
                         <label for="notes" class="form-label">Catatan</label>
-                        <textarea class="form-control" id="notes" rows="2" placeholder="Catatan khusus untuk pesanan anda"></textarea>
+                        <textarea class="form-control" id="notes" rows="2"
+                            placeholder="Catatan khusus untuk pesanan anda"></textarea>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <span class="fw-bold">Rp35.000</span>
                         <div class="input-group" style="width: 120px;">
-                            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-minus"></i></button>
+                            <button class="btn btn-outline-secondary" type="button"><i
+                                    class="fas fa-minus"></i></button>
                             <input type="text" class="form-control text-center" value="1" aria-label="Quantity">
                             <button class="btn btn-outline-secondary" type="button"><i class="fas fa-plus"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-dark w-100">Ubah Pesanan</button>
+                    <button type="button" class="btn w-100 text-light" style="background-color: #3B2621;">Ubah
+                        Pesanan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal fade" id="cancelOrderModal" tabindex="-1" aria-labelledby="cancelOrderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cancelOrderModalLabel">Batalkan Pesanan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Apakah anda yakin untuk membatalkan pesanan 3x Espresso Double?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                    <button type="button" class="btn btn-danger">Batalkan Pesanan</button>
                 </div>
             </div>
         </div>
