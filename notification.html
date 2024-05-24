@@ -16,72 +16,78 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFF7E8;">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="image/loginlogo.png" alt="" style="width: 160px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto fw-semibold gap-4">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Pesan Antar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Kursus Barista</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Booking Meja</a>
-                    </li>
-                </ul>
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-user-circle profile-icon"></i>
-                    <span class="profile-name ms-2">Alexandro</span>
-                </div>
-            </div>
+          <a class="navbar-brand" href="index.html">
+            <img src="image/loginlogo.png" alt="" style="width: 160px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto fw-semibold gap-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="status-pesanan.html">Pesan Antar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Kursus Barista</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="reservasi.html">Reservasi</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <!-- Shopping cart icon -->
+                <a style="color: #3B2621;" href="keranjang.html"><i class="fas fa-shopping-cart profile-icon me-2"></i></a>
+                <!-- Profile icon and name as a single clickable link -->
+                <a href="bio.html" style="color: #3B2621; text-decoration: none; display: flex; align-items: center;">
+                  <i class="fas fa-user-circle profile-icon"></i>
+                  <span class="profile-name ms-2">Alexandro</span>
+                </a>
+              </div>
+          </div>
         </div>
-    </nav>
+      </nav>
+    
     <!-- card 1 -->
     <div class="main-content">
         <div class="container-bio d-flex mx-3 my-2">
-            <div class="container-bio1 mx-4 " style="border: 3px solid #3B2621; border-radius: 5px;height: 400px;">
+            <div class="container-bio1 mx-4 " style=" background-color: #FFFCF5; border: 1px solid #3B2621; border-radius: 20px; height: 30%;">
                 <div class="nama d-flex p-2 align-items-center">
-                    <img src="image/profilebio.png" alt="">
-                    <p class="text-start align-items-center p-3">Alexandro</p>
-                  </div>
+                  <img src="image/profilebio.png" alt="">
+                  <p class="text-start align-items-center p-3">Alexandro</p>
+                </div>
                 <div class="container-bio1-content p-2">
-                    <div class="bebas-ongkir p-2" style="border: 3px solid #3B2621; border-radius: 5px;">
-                        <img src="image/Logo.png" alt="">
-                        <h4>Nikmatin bebas ongkir tanpa batas</h4>
-                        <p>Min. Belanja Rp0, bebas biaya aplikasi</p>
-                    </div>
+                  <div class="bebas-ongkir p-2" style="background-color: #FCEAE3; border-radius: 20px;">
+                    <img src="image/Logo.png" alt="">
+                    <h4>Nikmatin bebas ongkir tanpa batas</h4>
+                    <p>Min. Belanja Rp0, bebas biaya aplikasi</p>
+                  </div>
                 </div>
-                <div class="pembayaran p-2">
-                    <div class="gopay d-flex align-items-center">
-                        <img src="image/pembayaran1.png" alt="Gopay">
-                        <p class="mb-0">Gopay</p>
-                        <p class="ms-auto mb-0">Aktifkan</p>
-                    </div>
-
-                    <div class="member d-flex align-items-center">
-                        <img src="image/pembayaran2.png" alt="Member Card">
-                        <p class="mb-0">Member card</p>
-                        <p class="ms-auto mb-0">Aktifkan</p>
-                    </div>
-
-                    <div class="saldo d-flex align-items-center">
-                        <img src="image/pembayaran3.png" alt="Saldo">
-                        <p class="mb-0">Saldo</p>
-                        <p class="ms-auto mb-0">Rp.0</p>
-                    </div>
-                </div>
-            </div>
+                <div class="pembayaran p-2 row-gap-4">
+                  <div class="gopay d-flex align-items-center py-2">
+                      <img src="image/pembayaran1.png" alt="Gopay">
+                      <p class="mb-0">Gopay</p>
+                      <p class="ms-auto mb-0">Aktifkan</p>
+                  </div>
+          
+                  <div class="member d-flex align-items-center py-2">
+                      <img src="image/pembayaran2.png" alt="Member Card">
+                      <p class="mb-0">Member card</p>
+                      <p class="ms-auto mb-0">Aktifkan</p>
+                  </div>
+          
+                  <div class="saldo d-flex align-items-center py-2">
+                      <img src="image/pembayaran3.png" alt="Saldo">
+                      <p class="mb-0">Saldo</p>
+                      <p class="ms-auto mb-0">Rp.0</p>
+                  </div>
+              </div>
+              </div>
             <!-- card 2 -->
-            <div class="container-bio2 mx-2 pb-5" style="border: 3px solid #3B2621; border-radius: 5px;">
+            <div class="container-bio2 mx-2 pb-5" style="background-color: #FFFCF5; border: 1px solid #3B2621; border-radius: 20px;">
                 <!-- navbar 2 -->
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid mx-1">
@@ -101,7 +107,8 @@
                                     <a class="nav-link active" aria-current="page" href="voucher.html">Voucher</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="notification.html">Notifikasi</a>
+                                    <a class="nav-link active" aria-current="page"
+                                        href="notification.html">Notifikasi</a>
                                 </li>
                             </ul>
                         </div>
@@ -113,15 +120,16 @@
                     <div class="row">
                         <div class="header d-flex justify-content-between m-1">
                             <h5>Status Pesanan</h5>
-                            
+
                         </div>
                         <div class="col-md-12">
                             <!-- Header outside the card -->
 
                             <!-- Voucher card -->
-                            <div class="card m-3" style="border: 2px solid gainsboro;">
-                                <div class="d-flex align-items-center voucher-container">
-                                    <img src="image/kosong.png" alt="" style="height: 150px;">
+                            <div class="card m-3" style="border: 1px solid gray;">
+                                <div class="d-flex align-items-center voucher-container "
+                                    style="background-color: #FFFCF5;">
+                                    <img src="image/ojol.png" alt="" style="width: 20%; height: auto;">
                                     <div class="text-container p-3">
                                         <p class="mb-1 small">Pesanan Diterima Coffe Shop </p>
                                         <p class="mb-1 small">Pesanan akan di proses. Cek rincian dan lacak pesanan
@@ -138,11 +146,13 @@
                             <!-- Header outside the card -->
 
                             <!-- Voucher card -->
-                            <div class="card m-3" style="border: 2px solid gainsboro;">
-                                <div class="d-flex align-items-center voucher-container">
-                                    <img src="image/kosong.png" alt="" style="height: 150px;">
+                            <div class="card m-3" style="border: 1px solid gray;">
+                                <div class="d-flex align-items-center voucher-container "
+                                    style="background-color: #FFFCF5;">
+                                    <img src="image/ojol.png" alt="" style="width: 20%; height: auto;">
                                     <div class="text-container p-3">
-                                        <p class="mb-1 small">Driver sudah di Coffe Shoop,melanjutkan pesanan ketempat tujuan</p>
+                                        <p class="mb-1 small">Driver sudah di Coffe Shoop,melanjutkan pesanan ketempat
+                                            tujuan</p>
                                     </div>
 
                                 </div>
@@ -154,9 +164,10 @@
                             <!-- Header outside the card -->
 
                             <!-- Voucher card -->
-                            <div class="card m-3" style="border: 2px solid gainsboro;">
-                                <div class="d-flex align-items-center voucher-container">
-                                    <img src="image/kosong.png" alt="" style="height: 150px;">
+                            <div class="card m-3" style="border: 1px solid gray;">
+                                <div class="d-flex align-items-center voucher-container "
+                                    style="background-color: #FFFCF5;">
+                                    <img src="image/ojol.png" alt="" style="width: 20%; height: auto;">
                                     <div class="text-container p-3">
                                         <p class="mb-1 small">Pesanan sudah sampai di Tujuan</p>
 
