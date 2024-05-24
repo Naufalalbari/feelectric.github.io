@@ -33,6 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: "Java Aromanis", weight: "500 gram", image: "image/bean2.png" },
         { name: "Aceh Gayo", weight: "500 gram", image: "image/bean3.png" },
         { name: "Sidikalang", weight: "500 gram", image: "image/bean4.png" },
+        { name: "Bali Kintamani", weight: "500 gram", image: "image/bean1.png" },
+        { name: "Java Aromanis", weight: "500 gram", image: "image/bean2.png" },
+        { name: "Aceh Gayo", weight: "500 gram", image: "image/bean3.png" },
+        { name: "Sidikalang", weight: "500 gram", image: "image/bean4.png" },
         { name: "Sidikalang", weight: "500 gram", image: "image/bean4.png" },
         { name: "Aceh Gayo", weight: "500 gram", image: "image/bean3.png" },
         { name: "Java Aromanis", weight: "500 gram", image: "image/bean2.png" },
@@ -97,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updatePagination(paginationId, currentPage, totalPages, containerId, products, productsPerPage) {
         const pagination = document.getElementById(paginationId);
         pagination.innerHTML = '';
-
+    
         const createPageItem = (page, text, isActive, isDisabled) => {
             const li = document.createElement('li');
             li.className = `page-item ${isActive ? 'active' : ''} ${isDisabled ? 'disabled' : ''}`;
@@ -115,16 +119,40 @@ document.addEventListener('DOMContentLoaded', function () {
             li.appendChild(link);
             return li;
         };
-
+    
         // Previous button
-        pagination.appendChild(createPageItem(currentPage - 1, 'Previous', false, currentPage === 1));
-
-        // Page numbers
-        for (let i = 1; i <= totalPages; i++) {
-            pagination.appendChild(createPageItem(i, i, currentPage === i, false));
+        pagination.appendChild(createPageItem(currentPage - 1, '❮', false, currentPage === 1));
+    
+        if (totalPages <= 10) {
+            for (let i = 1; i <= totalPages; i++) {
+                pagination.appendChild(createPageItem(i, i, currentPage === i, false));
+            }
+        } else {
+            // Always show the first page
+            pagination.appendChild(createPageItem(1, '1', currentPage === 1, false));
+            // Logic for showing the dots
+            if (currentPage > 4) {
+                pagination.appendChild(createPageItem(null, '...', true, true));
+            }
+    
+            // Show the current page minus one to the current page plus one
+            let startPage = currentPage > 4 ? currentPage - 1 : 2;
+            let endPage = currentPage < totalPages - 3 ? currentPage + 1 : totalPages - 1;
+            for (let i = startPage; i <= endPage; i++) {
+                pagination.appendChild(createPageItem(i, i, currentPage === i, false));
+            }
+    
+            // Logic to show the dots towards the end
+            if (currentPage < totalPages - 3) {
+                pagination.appendChild(createPageItem(null, '...', true, true));
+            }
+    
+            // Always show the last page
+            pagination.appendChild(createPageItem(totalPages, totalPages, currentPage === totalPages, false));
         }
-
+    
         // Next button
-        pagination.appendChild(createPageItem(currentPage + 1, 'Next', false, currentPage === totalPages));
+        pagination.appendChild(createPageItem(currentPage + 1, '❯', false, currentPage === totalPages));
     }
+    
 });
