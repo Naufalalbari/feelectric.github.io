@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar with Search</title>
+    <title>Menu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/18b04d2726.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../../image/favicon.svg" type="image/x-icon">
     <style>
         body {
             background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='70' patternTransform='scale(7) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(40, 100%, 95%, 1)'/><path d='M-4.8 4.44L4 16.59 16.14 7.8M32 30.54l-13.23 7.07 7.06 13.23M-9 38.04l-3.81 14.5 14.5 3.81M65.22 4.44L74 16.59 86.15 7.8M61 38.04l-3.81 14.5 14.5 3.81'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M59.71 62.88v3h3M4.84 25.54L2.87 27.8l2.26 1.97m7.65 16.4l-2.21-2.03-2.03 2.21m29.26 7.13l.56 2.95 2.95-.55'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M58.98 27.57l-2.35-10.74-10.75 2.36M31.98-4.87l2.74 10.65 10.65-2.73M31.98 65.13l2.74 10.66 10.65-2.74'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M8.42 62.57l6.4 2.82 2.82-6.41m33.13-15.24l-4.86-5.03-5.03 4.86m-14-19.64l4.84-5.06-5.06-4.84'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
@@ -44,11 +45,18 @@
             border-color: #3B2621;
         }
 
+        .card {
+            border: 1px solid black;
+            border-radius: 16px;
+        }
+
         .product-card img {
             height: 200px;
             /* Ensure consistent height */
             object-fit: cover;
             /* Ensure images cover the area well */
+            padding: 15px;
+            border-radius: 20px;
         }
 
         .price-button {
@@ -120,8 +128,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFF7E8;">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="image/loginlogo.png" alt="" style="width: 160px;">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../image/loginlogo.png" alt="" style="width: 160px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,40 +138,39 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto fw-semibold gap-4">
                     <li class="nav-item">
-                        <a class="nav-link active fw-semibold" style="color: #3B2621;" aria-current="page"
-                            href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fw-semibold" style="color: #3B2621;" href="pesan-antar.html">Pesan
-                            Antar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fw-semibold" style="color: #3B2621;" href="kursus.html">Kursus
-                            Barista</a>
+                        <a class="nav-link active fw-semibold underline-primary" style="color: #3B2621;"
+                            aria-current="page" href="../../pages/menu/menu.html"><u>Menu</u></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active fw-semibold" style="color: #3B2621;"
-                            href="reservasi.html">Reservasi</a>
+                            href="../../pages/pesan antar/pesan-antar.html">Pesan Antar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-semibold" style="color: #3B2621;" href="quiz-page1.html">Quizz</a>
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/kursus/kursus.html">Kursus Barista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/reservasi/reservasi.html">Reservasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/quiz/quiz-page2.html">Quizz</a>
                     </li>
                 </ul>
+                <!-- button navbar -->
                 <div class="d-flex align-items-center gap-3">
-                    <!-- Notification icon -->
-                    <a href="notification.html"
+                    <a href="../notification/notification.html"
                         class="btn rounded-pill d-flex align-items-center justify-content-center"
                         style="width: 40px; height: 40px; background-color: #3B2621;">
                         <i class="fas fa-bell text-white "></i>
                     </a>
-                    <!-- Shopping cart icon with badge -->
-                    <a href="keranjang.html" class="btn rounded-pill d-flex align-items-center"
+                    <a href="../keranjang/keranjang.html" class="btn rounded-pill d-flex align-items-center"
                         style="background-color: #3B2621;">
                         <i class="fas fa-shopping-cart text-white me-2"></i>
                         <span class="badge bg-light text-dark rounded-pill">1</span>
                     </a>
-                    <!-- Profile icon and name -->
-                    <a href="bio.html" class="btn rounded-pill d-flex align-items-center"
+                    <a href="../profile/bio.html" class="btn rounded-pill d-flex align-items-center"
                         style="background-color: #3B2621;">
                         <i class="fas fa-user-circle text-white me-2"></i>
                         <span class="text-white">My Profile</span>
@@ -174,13 +181,14 @@
     </nav>
 
     <div class="container my-3">
-        <h1 style="color: #3B2621;">Menu</h1>
-        <p style="color: #3B2621;">Eksplorasi Aroma dan Kenikmatan dalam Setiap Cangkir Kopi Feelectric</p>
+        <h1 class="fw-bold" style="color: #3B2621;">Menu</h1>
+        <p class="fw-medium" style="color: #3B2621;">Eksplorasi Aroma dan Kenikmatan dalam Setiap Cangkir Kopi
+            Feelectric</p>
     </div>
-
+<!-- navigasi menu -->
     <div class="container mt-5">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-auto mb-3 mb-lg-0">
+            <div class="col-12 col-lg-auto mb-2 mb-lg-0">
                 <div class="input-group">
                     <span class="input-group-text" style="background-color: white;">
                         <a href="#"><i class="fas fa-search" style="color: #3B2621;"></i></a>
@@ -194,34 +202,39 @@
                         <a class="nav-link active rounded-pill" style="background-color: #3B2621;" href="#">Semua</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link rounded-pill border-2" style="background-color: #FFF7E8; color: #3B2621;" href="#ordinaryCoffe">Ordinary Coffee</a>
+                        <a class="nav-link rounded-pill border-2" style="background-color: #FFF7E8; color: #3B2621;"
+                            href="#ordinaryCoffe">Ordinary Coffee</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link rounded-pill border-2" style="background-color: #FFF7E8; color: #3B2621;" href="#manualBrew">Manual Brew</a>
+                        <a class="nav-link rounded-pill border-2" style="background-color: #FFF7E8; color: #3B2621;"
+                            href="#manualBrew">Manual Brew</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link rounded-pill border-2" style="background-color: #FFF7E8; color: #3B2621;" href="#latteNonCoffe">Latte Non Coffee</a>
+                        <a class="nav-link rounded-pill border-2" style="background-color: #FFF7E8; color: #3B2621;"
+                            href="#latteNonCoffe">Latte Non Coffee</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link rounded-pill border-2" style="background-color: #FFF7E8; color: #3B2621;" href="#feelTheSignature">Feel The Signature</a>
+                        <a class="nav-link rounded-pill border-2" style="background-color: #FFF7E8; color: #3B2621;"
+                            href="#feelTheSignature">Feel The Signature</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container mt-5">
-        <h2 class="mb-4" id="#ordinaryCoffe">Ordinary Coffee</h2>
+<!-- card menu 1 -->
+    <div class="container mt-5 ">
+        <h2 class="mb-4" id="feelTheSignature" style="color: #3B2621;">Feel The Signature</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
             <!-- Manually repeat this block for each product card -->
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <a href="menu-detail.html"><img src="image/bean1.png" class="card-img-top"
+                    <a href="menu-detail.html"><img src="../../image/cafebonbon.png" class="card-img-top"
                             alt="Espresso Single"></a>
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Cafe Bonbon</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">35K</p>
                             <a href="#" class="btn btn-primary" style="background-color: #3B2621;"
                                 data-bs-toggle="modal" data-bs-target="#productModal">Pesan</a>
                         </div>
@@ -230,122 +243,78 @@
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <a href="menu-detail.html"><img src="image/bean1.png" class="card-img-top"
-                            alt="Espresso Single"></a>
+                    <img src="../../image/sanger.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Sanger</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
-                            <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
+                            <p class="card-price fw-bold fs-5 mb-0">40K/45K</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #3B2621;"
+                                data-bs-toggle="modal" data-bs-target="#productModal">Pesan</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <a href="menu-detail.html"><img src="image/bean1.png" class="card-img-top"
-                            alt="Espresso Single"></a>
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Cafe Scotch Late</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
-                            <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
+                            <p class="card-price fw-bold fs-5 mb-0">50K/55K</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #3B2621;"
+                                data-bs-toggle="modal" data-bs-target="#productModal">Pesan</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <a href="menu-detail.html"><img src="image/bean1.png" class="card-img-top"
-                            alt="Espresso Single"></a>
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Matchafe Latte</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
-                            <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card product-card" style="color: #3B2621;">
-                    <a href="menu-detail.html"><img src="image/bean1.png" class="card-img-top"
-                            alt="Espresso Single"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
-                        <p class="card-text">100% one shot extract arabica coffee</p>
-                        <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
-                            <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card product-card" style="color: #3B2621;">
-                    <a href="menu-detail.html"><img src="image/bean1.png" class="card-img-top"
-                            alt="Espresso Single"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
-                        <p class="card-text">100% one shot extract arabica coffee</p>
-                        <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
-                            <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card product-card" style="color: #3B2621;">
-                    <a href="menu-detail.html"><img src="image/bean1.png" class="card-img-top"
-                            alt="Espresso Single"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
-                        <p class="card-text">100% one shot extract arabica coffee</p>
-                        <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
-                            <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card product-card" style="color: #3B2621;">
-                    <a href="menu-detail.html"><img src="image/bean1.png" class="card-img-top"
-                            alt="Espresso Single"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
-                        <p class="card-text">100% one shot extract arabica coffee</p>
-                        <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
-                            <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
+                            <p class="card-price fw-bold fs-5 mb-0">50K/55K</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #3B2621;"
+                                data-bs-toggle="modal" data-bs-target="#productModal">Pesan</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-
-            <!-- Repeat the above <div class="col">...</div> for a total of 8 times -->
         </div>
     </div>
-
-
+<!-- card menu 2 -->
     <div class="container mt-5">
-        <h2 class="mb-4" id="manualBrew">Manual Brew</h2>
+        <h2 class="mb-4 " id="#ordinaryCoffe" style="color: #3B2621;">Ordinary Coffee</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
-            <!-- Manually repeat this block for each product card -->
+ 
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <a href="menu-detail.html"><img src="../../image/expresosingle.png" class="card-img-top"
+                            alt="Espresso Single"></a>
                     <div class="card-body">
                         <h5 class="card-title">Espresso Single</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">30K</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #3B2621;"
+                                data-bs-toggle="modal" data-bs-target="#productModal">Pesan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card product-card" style="color: #3B2621;">
+                    <a href="menu-detail.html"><img src="../../image/expresodouble.png" class="card-img-top"
+                            alt="Espresso Single"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Espresso Double</h5>
+                        <p class="card-text">100% one shot extract arabica coffee</p>
+                        <div class="price-button">
+                            <p class="card-price fw-bold fs-5 mb-0">35K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
@@ -353,12 +322,13 @@
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <a href="menu-detail.html"><img src="../../image/picolo.png" class="card-img-top"
+                            alt="Espresso Single"></a>
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Picolo</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">35K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
@@ -366,12 +336,13 @@
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <a href="menu-detail.html"><img src="../../image/blackcoffe.png" class="card-img-top"
+                            alt="Espresso Single"></a>
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Black Coffe</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">35K/40K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
@@ -379,32 +350,78 @@
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <a href="menu-detail.html"><img src="../../image/cappucino.png" class="card-img-top"
+                            alt="Espresso Single"></a>
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Cappucino</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">40K/50K</p>
+                            <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card product-card" style="color: #3B2621;">
+                    <a href="menu-detail.html"><img src="../../image/cafelatte.png" class="card-img-top"
+                            alt="Espresso Single"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Caffe Latte</h5>
+                        <p class="card-text">100% one shot extract arabica coffee</p>
+                        <div class="price-button">
+                            <p class="card-price fw-bold fs-5 mb-0">40K/43K</p>
+                            <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card product-card" style="color: #3B2621;">
+                    <a href="menu-detail.html"><img src="../../image/flavorcafelatte.png" class="card-img-top"
+                            alt="Espresso Single"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Flavor Caffe Latte</h5>
+                        <p class="card-text">100% one shot extract arabica coffee</p>
+                        <div class="price-button">
+                            <p class="card-price fw-bold fs-5 mb-0">50K/55K</p>
+                            <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card product-card" style="color: #3B2621;">
+                    <a href="menu-detail.html"><img src="../../image/moccacino.png" class="card-img-top"
+                            alt="Espresso Single"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Moccacino</h5>
+                        <p class="card-text">100% one shot extract arabica coffee</p>
+                        <div class="price-button">
+                            <p class="card-price fw-bold fs-5 mb-0">50K/55K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
                 </div>
             </div>
 
+
         </div>
     </div>
+
+<!-- card menu 3 -->
     <div class="container mt-5">
-        <h2 class="mb-4" id="latteNonCoffe">Latte Non Coffee</h2>
+        <h2 class="mb-4" id="manualBrew" style="color: #3B2621;">Manual Brew</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
-            <!-- Manually repeat this block for each product card -->
+            
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/v60.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">V60</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">50K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
@@ -412,12 +429,12 @@
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Japanese V60</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">55K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
@@ -425,12 +442,12 @@
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/frenchpress.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">French Press</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">50K/55K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
@@ -438,12 +455,12 @@
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Aeropress</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">50K/55K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
@@ -452,18 +469,19 @@
 
         </div>
     </div>
+<!-- card menu 4 -->
     <div class="container mt-5 mb-5">
-        <h2 class="mb-4" id="feelTheSignature">Feel The Signature</h2>
+        <h2 class="mb-4" id="latteNonCoffe" style="color: #3B2621;">Latte Non Coffee</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
-            <!-- Manually repeat this block for each product card -->
+            
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Matcha Latte</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">40K/45K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
@@ -471,12 +489,12 @@
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Choco Latte</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">40K/45K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
@@ -484,12 +502,12 @@
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
-                        <h5 class="card-title">Espresso Single</h5>
+                        <h5 class="card-title">Taro Latte</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">40K/45K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
@@ -497,12 +515,12 @@
             </div>
             <div class="col">
                 <div class="card product-card" style="color: #3B2621;">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
                         <h5 class="card-title">Espresso Single</h5>
                         <p class="card-text">100% one shot extract arabica coffee</p>
                         <div class="price-button">
-                            <p class="card-price fw-bold mb-0">Rp35.000</p>
+                            <p class="card-price fw-bold fs-5 mb-0">40K/45K</p>
                             <a href="#" class="btn text-light" style="background-color: #3B2621;">Pesan</a>
                         </div>
                     </div>
@@ -511,6 +529,7 @@
 
         </div>
     </div>
+
 
 
     <!-- modal -->
@@ -524,7 +543,7 @@
                 <div class="modal-body" style="padding: 20px;">
                     <!-- Content -->
                     <div class="d-flex align-items-start mb-3">
-                        <img src="image/bean1.png" alt="Espresso Single"
+                        <img src="../../image/bean1.png" alt="Espresso Single"
                             style="width: 40%; height: auto; margin-right: 15px; border-radius: 15px;">
                         <div>
                             <h5 style="margin: 0;">Espresso Single</h5>
@@ -583,21 +602,21 @@
     <!-- footer -->
     <footer class="footer text-white p-3" style="background-color: #001804;">
         <div class="container">
-            <div class="row" style="padding-left: 90px;">
-                <div class="col-md-4 px-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <div class="footer-logo">
-                        <img src="image/Logofooter.png" alt="feelectric Logo" class="img-fluid">
+                        <img src="../../image/Logofooter.png" alt="feelectric Logo" class="img-fluid">
                         <p>A combination of Indonesia's authentic coffee with electric bicycle.</p>
                     </div>
                 </div>
-                <div class="col-md-4 px-5">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <h3>Office</h3>
                     <p>Jl. BSD Green Office Park, BSD<br>Kecamatan Tangerang, Banten<br>15345 Indonesia</p>
                 </div>
-                <div class="col-md-4 px-10">
+                <div class="col-md-4">
                     <h3>Contact Us</h3>
                     <p><i class="fab fa-whatsapp"></i> +6281388881111<br><i class="fab fa-instagram"></i>
-                        info@feelectric.com<br><i class="fa-regular fa-envelope"></i> feelectric@gmail.com</p>
+                        info@feelectric.com<br><i class="fa-regular fa-envelope"></i></i> feelectric@gmail.com</p>
                 </div>
             </div>
         </div>
