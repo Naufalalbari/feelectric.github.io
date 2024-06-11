@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espresso Single</title>
+    <title>Menu Detail</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/18b04d2726.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../../image/favicon.svg" type="image/x-icon">
     <style>
         body {
             background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='70' patternTransform='scale(7) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(40, 100%, 95%, 1)'/><path d='M-4.8 4.44L4 16.59 16.14 7.8M32 30.54l-13.23 7.07 7.06 13.23M-9 38.04l-3.81 14.5 14.5 3.81M65.22 4.44L74 16.59 86.15 7.8M61 38.04l-3.81 14.5 14.5 3.81'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M59.71 62.88v3h3M4.84 25.54L2.87 27.8l2.26 1.97m7.65 16.4l-2.21-2.03-2.03 2.21m29.26 7.13l.56 2.95 2.95-.55'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M58.98 27.57l-2.35-10.74-10.75 2.36M31.98-4.87l2.74 10.65 10.65-2.73M31.98 65.13l2.74 10.66 10.65-2.74'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M8.42 62.57l6.4 2.82 2.82-6.41m33.13-15.24l-4.86-5.03-5.03 4.86m-14-19.64l4.84-5.06-5.06-4.84'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
@@ -38,13 +39,16 @@
             height: 100%;
             object-fit: cover;
         }
+
         .navbar-light .navbar-nav .nav-link {
             color: #3B2621;
         }
+
         .card-img-top {
             padding: 10px;
             border-radius: 15px;
         }
+
         .card {
             border: 1px solid #3B2621;
             border-radius: 20px;
@@ -56,8 +60,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFF7E8;">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="image/loginlogo.png" alt="" style="width: 160px;">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../image/loginlogo.png" alt="" style="width: 160px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,40 +70,39 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto fw-semibold gap-4">
                     <li class="nav-item">
-                        <a class="nav-link active fw-semibold" style="color: #3B2621;" aria-current="page"
-                            href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fw-semibold" style="color: #3B2621;" href="pesan-antar.html">Pesan
-                            Antar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fw-semibold" style="color: #3B2621;" href="kursus.html">Kursus
-                            Barista</a>
+                        <a class="nav-link active fw-semibold underline-primary" style="color: #3B2621;"
+                            aria-current="page" href="../../pages/menu/menu.html"><u>Menu</u></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active fw-semibold" style="color: #3B2621;"
-                            href="reservasi.html">Reservasi</a>
+                            href="../../pages/pesan antar/pesan-antar.html">Pesan Antar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-semibold" style="color: #3B2621;" href="quiz-page1.html">Quizz</a>
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/kursus/kursus.html">Kursus Barista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/reservasi/reservasi.html">Reservasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/quiz/quiz-page2.html">Quizz</a>
                     </li>
                 </ul>
+                <!-- button navbar -->
                 <div class="d-flex align-items-center gap-3">
-                    <!-- Notification icon -->
-                    <a href="notification.html"
+                    <a href="../notification/notification.html"
                         class="btn rounded-pill d-flex align-items-center justify-content-center"
                         style="width: 40px; height: 40px; background-color: #3B2621;">
                         <i class="fas fa-bell text-white "></i>
                     </a>
-                    <!-- Shopping cart icon with badge -->
-                    <a href="keranjang.html" class="btn rounded-pill d-flex align-items-center"
+                    <a href="../keranjang/keranjang.html" class="btn rounded-pill d-flex align-items-center"
                         style="background-color: #3B2621;">
                         <i class="fas fa-shopping-cart text-white me-2"></i>
                         <span class="badge bg-light text-dark rounded-pill">1</span>
                     </a>
-                    <!-- Profile icon and name -->
-                    <a href="bio.html" class="btn rounded-pill d-flex align-items-center"
+                    <a href="../profile/bio.html" class="btn rounded-pill d-flex align-items-center"
                         style="background-color: #3B2621;">
                         <i class="fas fa-user-circle text-white me-2"></i>
                         <span class="text-white">My Profile</span>
@@ -108,31 +111,32 @@
             </div>
         </div>
     </nav>
-
+<!-- konten utama -->
     <div class="container main-content">
         <div class="row mb-5">
             <div class="col-md-6">
                 <div class="main-image">
-                    <img src="image/bean1.png" alt="Espresso Single" class="img-fluid">
+                    <img src="../../image/bean1.png" alt="Espresso Single" class="img-fluid">
                     <div class="d-flex justify-content-center mt-2 gap-2">
                         <div class="thumbnail">
-                            <img src="image/bean1.png" alt="Thumbnail 1" class="rounded">
+                            <img src="../../image/bean1.png" alt="Thumbnail 1" class="rounded">
                         </div>
                         <div class="thumbnail">
-                            <img src="image/bean1.png" alt="Thumbnail 2" class="rounded">
+                            <img src="../../image/bean1.png" alt="Thumbnail 2" class="rounded">
                         </div>
                         <div class="thumbnail">
-                            <img src="image/bean1.png" alt="Thumbnail 3" class="rounded">
+                            <img src="../../image/bean1.png" alt="Thumbnail 3" class="rounded">
                         </div>
                         <div class="thumbnail">
-                            <img src="image/bean1.png" alt="Thumbnail 4" class="rounded">
+                            <img src="../../image/bean1.png" alt="Thumbnail 4" class="rounded">
                         </div>
                         <div class="thumbnail">
-                            <img src="image/bean1.png" alt="Thumbnail 5" class="rounded">
+                            <img src="../../image/bean1.png" alt="Thumbnail 5" class="rounded">
                         </div>
                     </div>
                 </div>
             </div>
+<!-- deskripsi&form -->
             <div class="col-md-6">
                 <h2>Espresso Single</h2>
                 <p class="text-muted">Rp35.000 - Rp40.000</p>
@@ -141,13 +145,14 @@
                     melalui biji kopi yang digiling halus dengan tekanan tinggi, biasanya sekitar 9 bar.</p>
                 <p><strong>Ukuran</strong></p>
                 <select class="form-select mb-3" style="border: 2px solid #3B2621;">
-                    <option selected>Choose size</option>
-                    <option value="1">Small</option>
-                    <option value="2">Medium</option>
-                    <option value="3">Large</option>
+                    <option selected>Ukuran</option>
+                    <option value="1">Kecil</option>
+                    <option value="2">Sedang</option>
+                    <option value="3">Besar</option>
                 </select>
                 <p><strong>Catatan</strong></p>
-                <textarea class="form-control mb-3" rows="3" placeholder="Catatan lain untuk pesanan anda!" style="border: 2px solid #3B2621;"></textarea>
+                <textarea class="form-control mb-3" rows="3" placeholder="Catatan lain untuk pesanan anda!"
+                    style="border: 2px solid #3B2621;"></textarea>
                 <p><strong>86 in stock</strong></p>
                 <div class="d-flex mb-3">
                     <input type="number" class="form-control w-auto me-2" value="1" style="border: 2px solid #3B2621;">
@@ -156,74 +161,73 @@
             </div>
         </div>
     </div>
-
+<!-- deskripsi  -->
     <div class="container mt-3">
         <div class="text">
             <div class="card-body">
                 <h5 class="card-title">Deskripsi</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">Kopi kental yang dihasilkan dengan memaksa air panas melalui bubuk kopi yang halus
+                    dengan tekanan tinggi dalam waktu singkat. Hal ini menghasilkan ekstrak kopi yang kaya rasa, kental,
+                    dan bercrema (busa berwarna coklat kekuningan). Espresso umumnya dinikmati dalam porsi kecil
+                    (sekitar 30 ml) dan menjadi dasar bagi berbagai minuman kopi lainnya seperti cappuccino, latte, dan
+                    macchiato. Selain sensasi rasa yang unik, espresso juga menawarkan beberapa manfaat bagi kesehatan,
+                    di antaranya :</p>
 
                 <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</li>
+                    <li>Meningkatkan energi dan fokus, Kafein dalam espresso dapat membantu meningkatkan kewaspadaan,
+                        konsentrasi, dan energi.</li>
+                    <li>Meningkatkan kinerja fisik, Kafein dapat meningkatkan stamina dan performa saat berolahraga.
+                    </li>
+                    <li>Sumber antioksida, Espresso kaya akan antioksidan yang dapat membantu melindungi tubuh dari
+                        kerusakan sel.</li>
+                    <li>Menurunkan risiko penyakit tertentu, Beberapa penelitian menunjukkan bahwa konsumsi kopi
+                        espresso dapat membantu menurunkan risiko penyakit seperti diabetes tipe 2, penyakit Parkinson,
+                        dan Alzheimer.</li>
                 </ul>
 
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum!</p>
+                <p class="card-text">Espresso tidak hanya dinikmati sebagai minuman murni, tetapi juga menjadi dasar
+                    untuk berbagai minuman kopi lainnya, seperti cappuccino, latte, dan macchiato.</p>
             </div>
         </div>
     </div>
-
+<!-- card produk terkait -->
     <div class="container mt-4 mb-4">
         <h2 class="mb-3">Produk Terkait</h2>
         <div class="row row-cols-1 row-cols-md-4 g-4">
-            <!-- First product card -->
+            <!-- card pertama -->
             <div class="col">
                 <div class="card">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
                         <h5 class="card-title">Espresso Single</h5>
                         <p class="card-text">Rp 35.000 - Rp 40.000</p>
                     </div>
                 </div>
             </div>
-            <!-- Second product card -->
+            <!-- card kedua -->
             <div class="col">
                 <div class="card">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
                         <h5 class="card-title">Espresso Single</h5>
                         <p class="card-text">Rp 35.000 - Rp 40.000</p>
                     </div>
                 </div>
             </div>
-            <!-- Third product card -->
+            <!--card ketiga -->
             <div class="col">
                 <div class="card">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
                         <h5 class="card-title">Espresso Single</h5>
                         <p class="card-text">Rp 35.000 - Rp 40.000</p>
                     </div>
                 </div>
             </div>
-            <!-- Fourth product card -->
+            <!-- card keempat -->
             <div class="col">
                 <div class="card">
-                    <img src="image/bean1.png" class="card-img-top" alt="Espresso Single">
+                    <img src="../../image/bean1.png" class="card-img-top" alt="Espresso Single">
                     <div class="card-body">
                         <h5 class="card-title">Espresso Single</h5>
                         <p class="card-text">Rp 35.000 - Rp 40.000</p>
@@ -236,21 +240,21 @@
     <!-- footer -->
     <footer class="footer text-white p-3" style="background-color: #001804;">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 px-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <div class="footer-logo">
-                        <img src="image/Logofooter.png" alt="feelectric Logo" class="img-fluid">
+                        <img src="../../image/Logofooter.png" alt="feelectric Logo" class="img-fluid">
                         <p>A combination of Indonesia's authentic coffee with electric bicycle.</p>
                     </div>
                 </div>
-                <div class="col-md-4 px-5">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <h3>Office</h3>
                     <p>Jl. BSD Green Office Park, BSD<br>Kecamatan Tangerang, Banten<br>15345 Indonesia</p>
                 </div>
-                <div class="col-md-4 px-10">
+                <div class="col-md-4">
                     <h3>Contact Us</h3>
                     <p><i class="fab fa-whatsapp"></i> +6281388881111<br><i class="fab fa-instagram"></i>
-                        info@feelectric.com<br><i class="fa-regular fa-envelope"></i> feelectric@gmail.com</p>
+                        info@feelectric.com<br><i class="fa-regular fa-envelope"></i></i> feelectric@gmail.com</p>
                 </div>
             </div>
         </div>
