@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/18b04d2726.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Pembayaran</title>
+    <link rel="shortcut icon" href="../../image/favicon.svg" type="image/x-icon">
     <style>
         body {
-            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='70' patternTransform='scale(7) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(40, 100%, 95%, 1)'/><path d='M-4.8 4.44L4 16.59 16.14 7.8M32 30.54l-13.23 7.07 7.06 13.23M-9 38.04l-3.81 14.5 14.5 3.81M65.22 4.44L74 16.59 86.15 7.8M61 38.04l-3.81 14.5 14.5 3.81'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M59.71 62.88v3h3M4.84 25.54L2.87 27.8l2.26 1.97m7.65 16.4l-2.21-2.03-2.03 2.21m29.26 7.13l.56 2.95 2.95-.55'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M58.98 27.57l-2.35-10.74-10.75 2.36M31.98-4.87l2.74 10.65 10.65-2.73M31.98 65.13l2.74 10.66 10.65-2.74'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M8.42 62.57l6.4 2.82 2.82-6.41m33.13-15.24l-4.86-5.03-5.03 4.86m-14-19.64l4.84-5.06-5.06-4.84'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>") ;
+            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='70' patternTransform='scale(7) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(40, 100%, 95%, 1)'/><path d='M-4.8 4.44L4 16.59 16.14 7.8M32 30.54l-13.23 7.07 7.06 13.23M-9 38.04l-3.81 14.5 14.5 3.81M65.22 4.44L74 16.59 86.15 7.8M61 38.04l-3.81 14.5 14.5 3.81'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M59.71 62.88v3h3M4.84 25.54L2.87 27.8l2.26 1.97m7.65 16.4l-2.21-2.03-2.03 2.21m29.26 7.13l.56 2.95 2.95-.55'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M58.98 27.57l-2.35-10.74-10.75 2.36M31.98-4.87l2.74 10.65 10.65-2.73M31.98 65.13l2.74 10.66 10.65-2.74'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M8.42 62.57l6.4 2.82 2.82-6.41m33.13-15.24l-4.86-5.03-5.03 4.86m-14-19.64l4.84-5.06-5.06-4.84'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
         }
+
         .payment-section {
             background-color: #FFFAF1;
-            border: 1px solid #ccc;
+            border: 1px solid #3B2621;
             border-radius: 5px;
             padding: 10px 15px;
             margin-bottom: 10px;
@@ -21,11 +24,13 @@
             justify-content: space-between;
             font-size: 1rem;
         }
+
         .payment-section img {
             width: auto;
             height: 30px;
             margin-right: 10px;
         }
+
         .payment-title {
             font-weight: bold;
             flex: 1;
@@ -34,29 +39,35 @@
             align-items: center;
             text-align: center;
         }
+
         .dropdown-icon {
             font-size: 1rem;
             cursor: pointer;
         }
+
         .other-section-title {
             font-weight: bold;
             margin-top: 20px;
         }
+
         .btn-reservasi {
             background-color: #3B2621;
             color: white;
         }
+
         .btn-outline-reservasi {
             border: 1px solid #3B2621;
             color: #3B2621;
         }
     </style>
 </head>
+
 <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFF7E8;">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="image/loginlogo.png" alt="" style="width: 160px;">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../image/loginlogo.png" alt="" style="width: 160px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,38 +76,56 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto fw-semibold gap-4">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                        <a class="nav-link active fw-semibold underline-primary" style="color: #3B2621;"
+                            aria-current="page" href="../../pages/menu/menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="status-pesanan.html">Pesan Antar</a>
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/pesan antar/pesan-antar.html">Pesan Antar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Kursus Barista</a>
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/kursus/kursus.html">Kursus Barista</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="reservasi.html">Reservasi</a>
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/reservasi/reservasi.html">Reservasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/quiz/quiz-page2.html">Quizz</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center">
-                    <!-- Shopping cart icon -->
-                    <a style="color: #3B2621;" href="keranjang.html"><i class="fas fa-shopping-cart profile-icon me-2"></i></a>
-                    <!-- Profile icon and name as a single clickable link -->
-                    <a href="bio.html" style="color: #3B2621; text-decoration: none; display: flex; align-items: center;">
-                      <i class="fas fa-user-circle profile-icon"></i>
-                      <span class="profile-name ms-2">Alexandro</span>
+                <!-- button navbar -->
+                <div class="d-flex align-items-center gap-3">
+                    <a href="../notification/notification.html"
+                        class="btn rounded-pill d-flex align-items-center justify-content-center"
+                        style="width: 40px; height: 40px; background-color: #3B2621;">
+                        <i class="fas fa-bell text-white "></i>
                     </a>
-                  </div>
+                    <a href="../keranjang/keranjang.html" class="btn rounded-pill d-flex align-items-center"
+                        style="background-color: #3B2621;">
+                        <i class="fas fa-shopping-cart text-white me-2"></i>
+                        <span class="badge bg-light text-dark rounded-pill">1</span>
+                    </a>
+                    <a href="../profile/bio.html" class="btn rounded-pill d-flex align-items-center"
+                        style="background-color: #3B2621;">
+                        <i class="fas fa-user-circle text-white me-2"></i>
+                        <span class="text-white">My Profile</span>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
-
-    <div class="container mt-5">
-        <h2>Pesanan</h2>
-        <div class="list-group" >
+    <!-- card pesanan -->
+    <div class="container mt-5 pt-3 "
+        style="background-color: #FFFAF1; border: 1px solid #3B2621; border-radius: 40px;">
+        <h2 style="color: #3B2621;">Pesanan</h2>
+        <div class="list-group">
             <div class="list-group-item" style="background-color: #FFFAF1;">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="image/bean1.png" alt="Espresso Double" class="img-fluid rounded">
+                        <img src="../../image/bean1.png" alt="Espresso Double" class="img-fluid rounded">
                     </div>
                     <div class="col-8">
                         <h5 class="mb-1">Espresso Double</h5>
@@ -113,7 +142,7 @@
             <div class="list-group-item" style="background-color: #FFFAF1;">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="image/bean1.png" alt="Espresso Double" class="img-fluid rounded">
+                        <img src="../../image/bean1.png" alt="Espresso Double" class="img-fluid rounded">
                     </div>
                     <div class="col-8">
                         <h5 class="mb-1">Espresso Double</h5>
@@ -128,43 +157,44 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container mt-5">
-        <div class="card" style="background-color: #FFFAF1;">
-            <div class="card-body" style="background-color: #FFFAF1;">
-                <!-- Discount Code Section -->
-                <div class="input-group mb-3" style="background-color: #FFFAF1;">
-                    <input type="text" class="form-control" placeholder="Discount code" aria-label="Discount code" style="background-color: #FFFAF1;">
-                    <button class="btn btn-outline-secondary" type="button">Apply</button>
+        <!-- total -->
+        <div class="container my-5">
+            <div class="card" style="background-color: #FFFAF1;">
+                <div class="card-body" style="background-color: #FFFAF1;">
+                    <!-- Discount kode -->
+                    <div class="input-group mb-3" style="background-color: #FFFAF1;">
+                        <input type="text" class="form-control" placeholder="Discount code" aria-label="Discount code"
+                            style="background-color: #FFFAF1;">
+                        <button class="btn btn-outline-secondary" type="button">Apply</button>
+                    </div>
+
+                    <!-- Detail harga -->
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between" style="background-color: #FFFAF1;">
+                            <span>Subtotal:</span>
+                            <strong>60K</strong>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between" style="background-color: #FFFAF1;">
+                            <span>Shipping Cost:</span>
+                            <strong>8K</strong>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between" style="background-color: #FFFAF1;">
+                            <span>Discount (10%):</span>
+                            <strong>-6K</strong>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between" style="background-color: #FFFAF1;">
+                            <span><strong>Total:</strong></span>
+                            <strong>62K</strong>
+                        </li>
+                    </ul>
                 </div>
-
-                <!-- Price Details -->
-                <ul class="list-group list-group-flush" >
-                    <li class="list-group-item d-flex justify-content-between" style="background-color: #FFFAF1;">
-                        <span>Subtotal:</span>
-                        <strong>Rp 60.000</strong>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between" style="background-color: #FFFAF1;">
-                        <span>Shipping Cost:</span>
-                        <strong>Rp 8.000</strong>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between" style="background-color: #FFFAF1;">
-                        <span>Discount (10%):</span>
-                        <strong>-Rp 6.000</strong>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between" style="background-color: #FFFAF1;">
-                        <span><strong>Total:</strong></span>
-                        <strong>Rp 62.000</strong>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
-
     <div class="container mt-5 my-5">
         <div class="payment-section">
-            <img src="image/DANA.png" alt="DANA Logo">
+            <img src="../../image/DANA.png" alt="DANA Logo">
             <div class="payment-title" style="padding-right: 50px;">E Wallet</div>
             <div class="dropdown-icon">
                 <i class="fas fa-chevron-down"></i>
@@ -172,7 +202,7 @@
         </div>
 
         <div class="payment-section">
-            <img src="image/mastercard.png" alt="Mastercard Logo">
+            <img src="../../image/mastercard.png" alt="Mastercard Logo">
             <div class="payment-title">Card/Mbanking</div>
             <div class="dropdown-icon">
                 <i class="fas fa-chevron-down"></i>
@@ -180,7 +210,7 @@
         </div>
 
         <div class="payment-section">
-            <img src="image/Alfamart.png" alt="Alfamart Logo"> 
+            <img src="../../image/Alfamart.png" alt="Alfamart Logo">
             <div class="payment-title">Gerai Retail</div>
             <div class="dropdown-icon">
                 <i class="fas fa-chevron-down"></i>
@@ -188,7 +218,7 @@
         </div>
 
         <div class="payment-section">
-            <img src="image/qris.png" alt="QRIS Logo">
+            <img src="../../image/qris.png" alt="QRIS Logo">
             <div class="payment-title mx-5">Scan & Pay</div>
             <div class="dropdown-icon">
                 <i class="fas fa-chevron-down"></i>
@@ -196,9 +226,9 @@
         </div>
 
         <div class="other-section-title">Other</div>
-        
+
         <div class="payment-section">
-            <img src="image/wallet.png" alt="Cash Logo">
+            <img src="../../image/wallet.png" alt="Cash Logo">
             <div class="payment-title">Cash</div>
             <div class="dropdown-icon">
                 <input type="radio" name="payment-method" checked>
@@ -206,28 +236,28 @@
         </div>
 
         <div class="d-flex flex-row-reverse mt-4">
-            <a href="status-pesanan.html" class="btn btn-reservasi w-25">Bayar</a>
-            <a href="keranjang.html" class="btn btn-outline-reservasi mx-5 w-25">Batal</a>
+            <a href="../payment/status-pesanan.html" class="btn btn-reservasi w-25">Bayar</a>
+            <a href="../keranjang/keranjang.html" class="btn btn-outline-reservasi mx-5 w-25">Batal</a>
         </div>
     </div>
     <!-- footer -->
     <footer class="footer text-white p-3" style="background-color: #001804;">
         <div class="container">
-            <div class="row" style="padding-left: 90px;">
-                <div class="col-md-4 px-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <div class="footer-logo">
-                        <img src="image/Logofooter.png" alt="feelectric Logo" class="img-fluid">
+                        <img src="../../image/Logofooter.png" alt="feelectric Logo" class="img-fluid">
                         <p>A combination of Indonesia's authentic coffee with electric bicycle.</p>
                     </div>
                 </div>
-                <div class="col-md-4 px-5">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <h3>Office</h3>
                     <p>Jl. BSD Green Office Park, BSD<br>Kecamatan Tangerang, Banten<br>15345 Indonesia</p>
                 </div>
-                <div class="col-md-4 px-10">
+                <div class="col-md-4">
                     <h3>Contact Us</h3>
                     <p><i class="fab fa-whatsapp"></i> +6281388881111<br><i class="fab fa-instagram"></i>
-                        info@feelectric.com<br><i class="fa-regular fa-envelope"></i> feelectric@gmail.com</p>
+                        info@feelectric.com<br><i class="fa-regular fa-envelope"></i></i> feelectric@gmail.com</p>
                 </div>
             </div>
         </div>
@@ -238,4 +268,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
