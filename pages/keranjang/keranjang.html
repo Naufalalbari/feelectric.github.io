@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar with Search</title>
+    <title>Keranjang</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/18b04d2726.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../../image/favicon.svg" type="image/x-icon">
     <style>
         body {
             background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='70' patternTransform='scale(7) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(40, 100%, 95%, 1)'/><path d='M-4.8 4.44L4 16.59 16.14 7.8M32 30.54l-13.23 7.07 7.06 13.23M-9 38.04l-3.81 14.5 14.5 3.81M65.22 4.44L74 16.59 86.15 7.8M61 38.04l-3.81 14.5 14.5 3.81'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M59.71 62.88v3h3M4.84 25.54L2.87 27.8l2.26 1.97m7.65 16.4l-2.21-2.03-2.03 2.21m29.26 7.13l.56 2.95 2.95-.55'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M58.98 27.57l-2.35-10.74-10.75 2.36M31.98-4.87l2.74 10.65 10.65-2.73M31.98 65.13l2.74 10.66 10.65-2.74'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/><path d='M8.42 62.57l6.4 2.82 2.82-6.41m33.13-15.24l-4.86-5.03-5.03 4.86m-14-19.64l4.84-5.06-5.06-4.84'  stroke-linecap='square' stroke-width='1' stroke='hsla(20, 29%, 18%, 0.18)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
@@ -56,8 +57,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFF7E8;">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="image/loginlogo.png" alt="" style="width: 160px;">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../image/loginlogo.png" alt="" style="width: 160px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,39 +68,38 @@
                 <ul class="navbar-nav mx-auto fw-semibold gap-4">
                     <li class="nav-item">
                         <a class="nav-link active fw-semibold" style="color: #3B2621;" aria-current="page"
-                            href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fw-semibold" style="color: #3B2621;" href="pesan-antar.html">Pesan
-                            Antar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fw-semibold" style="color: #3B2621;" href="kursus.html">Kursus
-                            Barista</a>
+                            href="../../pages/menu/menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active fw-semibold" style="color: #3B2621;"
-                            href="reservasi.html">Reservasi</a>
+                            href="../../pages/pesan antar/pesan-antar.html">Pesan Antar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-semibold" style="color: #3B2621;" href="quiz-page1.html">Quizz</a>
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/kursus/kursus.html">Kursus Barista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/reservasi/reservasi.html">Reservasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/quiz/quiz-page2.html">Quizz</a>
                     </li>
                 </ul>
+                <!-- button navbar -->
                 <div class="d-flex align-items-center gap-3">
-                    <!-- Notification icon -->
-                    <a href="notification.html"
+                    <a href="../notification/notification.html"
                         class="btn rounded-pill d-flex align-items-center justify-content-center"
                         style="width: 40px; height: 40px; background-color: #3B2621;">
                         <i class="fas fa-bell text-white "></i>
                     </a>
-                    <!-- Shopping cart icon with badge -->
-                    <a href="keranjang.html" class="btn rounded-pill d-flex align-items-center"
+                    <a href="../keranjang/keranjang.html" class="btn rounded-pill d-flex align-items-center"
                         style="background-color: #3B2621;">
                         <i class="fas fa-shopping-cart text-white me-2"></i>
                         <span class="badge bg-light text-dark rounded-pill">1</span>
                     </a>
-                    <!-- Profile icon and name -->
-                    <a href="bio.html" class="btn rounded-pill d-flex align-items-center"
+                    <a href="../profile/bio.html" class="btn rounded-pill d-flex align-items-center"
                         style="background-color: #3B2621;">
                         <i class="fas fa-user-circle text-white me-2"></i>
                         <span class="text-white">My Profile</span>
@@ -111,21 +111,21 @@
 
     <div class="container mt-4 mb-5">
         <div class="row">
-            <!-- Cart items on the left -->
+            <!-- bagian keranjang, konten sebelah kiri -->
             <div class="col-md-8">
                 <h3>Keranjang</h3>
                 <div class="card" style="border: 1px solid #3B2621;">
                     <ul class="list-group list-group-flush">
-                        <!-- Repeated item -->
+                        <!-- ulangi item -->
                         <li class="list-group-item">
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <img src="image/bean1.png" class="img-fluid"
+                                    <img src="../../image/bean1.png" class="img-fluid"
                                         style="width: 60px; height: 60px; margin-right: 15px;" alt="Espresso Double">
                                     <div>
                                         <h5 class="mb-1">3x Espresso Double</h5>
                                         <p class="mb-1 text-muted">Dingin, Ukuran Besar</p>
-                                        <p class="mb-0">Catatan: lorem ipsum</p>
+                                        <p class="mb-0">Catatan: -</p>
                                     </div>
                                 </div>
                                 <div>
@@ -139,24 +139,24 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- Repeat for other items -->
+                        <!-- ulangi untuk item lainnya -->
                     </ul>
                 </div>
             </div>
 
-            <!-- Additional content on the right -->
+            <!-- konten sebelah kanan -->
             <div class="col-md-4">
                 <div class="card-body">
-                    <h5 class="card-title">Pickup Type</h5>
+                    <h5 class="card-title">Pengambilan</h5>
                     <div class="mb-3">
-                        <label for="pickupType" class="form-label">Pickup Type</label>
+                        <label for="pickupType" class="form-label">Minum di tempat/Bawa pulang</label>
                         <select class="form-select" id="pickupType" style="border: 1px solid #3B2621;">
-                            <option selected>Dine In</option>
-                            <option>Take Away</option>
+                            <option selected>Minum di tempat</option>
+                            <option>Bawa pulang</option>
                         </select>
                     </div>
 
-                    <h5 class="card-title mt-4">Payment</h5>
+                    <h5 class="card-title mt-4">Pembayaran</h5>
                     <p><strong>Sub-Total</strong> <span class="float-end">Rp 30.000</span></p>
                     <hr style="color: #3B2621;">
                     <div class="input-group mb-3">
@@ -165,8 +165,8 @@
                         <button class="btn text-light" style="background-color: #3B2621;" type="button">Apply</button>
                     </div>
                     <div class="d-grid gap-2">
-                        <a href="payment.html" class="btn text-light" style="background-color: #3B2621;"
-                            type="button">Lanjutkan ke Pembayaran</a>
+                        <a href="../../pages/payment/payment.html" class="btn text-light"
+                            style="background-color: #3B2621;" type="button">Lanjutkan ke Pembayaran</a>
                     </div>
                 </div>
             </div>
@@ -183,9 +183,9 @@
                         data-bs-toggle="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Content -->
+                    <!-- konten -->
                     <div class="d-flex align-items-center mb-3">
-                        <img src="path_to_your_coffee_image.jpg" alt="Espresso Double"
+                        <img src="../../image/bean1.png" alt="Espresso Double"
                             style="width: 60px; height: 60px; margin-right: 15px;">
                         <strong>Espresso Double</strong>
                     </div>
@@ -229,7 +229,7 @@
         </div>
     </div>
 
-    <!-- Confirmation Modal -->
+    <!-- Modal konfirmasi -->
     <div class="modal fade" id="cancelOrderModal" tabindex="-1" aria-labelledby="cancelOrderModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -255,7 +255,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <div class="footer-logo">
-                        <img src="image/Logofooter.png" alt="feelectric Logo" class="img-fluid mb-3">
+                        <img src="../../image/Logofooter.png" alt="feelectric Logo" class="img-fluid mb-3">
                         <p>A combination of Indonesia's authentic coffee with electric bicycle.</p>
                     </div>
                 </div>
