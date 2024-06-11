@@ -20,6 +20,8 @@
         .card img {
             height: 200px;
             object-fit: cover;
+            padding: 10px;
+            border-radius: 20px;
         }
 
         .card-title {
@@ -44,62 +46,72 @@
 </head>
 
 <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFF7E8;">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="image/loginlogo.png" alt="" style="width: 160px;">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto fw-semibold gap-4">
-                <li class="nav-item">
-                    <a class="nav-link active fw-semibold" style="color: #3B2621;" aria-current="page" href="menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active fw-semibold" style="color: #3B2621;" href="pesan-antar.html">Pesan Antar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active fw-semibold" style="color: #3B2621;" href="kursus.html">Kursus Barista</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active fw-semibold" style="color: #3B2621;" href="reservasi.html">Reservasi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active fw-semibold" style="color: #3B2621;" href="quiz-page1.html">Quizz</a>
-                </li>
-            </ul>
-            <div class="d-flex align-items-center gap-3">
-              <!-- Notification icon -->
-              <a href="notification.html" class="btn rounded-pill d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: #3B2621;">
-                <i class="fas fa-bell text-white "></i>
-              </a>
-              <!-- Shopping cart icon with badge -->
-              <a href="keranjang.html" class="btn rounded-pill d-flex align-items-center" style="background-color: #3B2621;">
-                <i class="fas fa-shopping-cart text-white me-2"></i>
-                <span class="badge bg-light text-dark rounded-pill">1</span>
-              </a>
-              <!-- Profile icon and name -->
-              <a href="bio.html" class="btn rounded-pill d-flex align-items-center" style="background-color: #3B2621;">
-                <i class="fas fa-user-circle text-white me-2"></i>
-                <span class="text-white">My Profile</span>
-              </a>
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../image/loginlogo.png" alt="" style="width: 160px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-semibold gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold underline-primary" style="color: #3B2621;"
+                            aria-current="page" href="../../pages/menu/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/pesan antar/pesan-antar.html">Pesan Antar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/kursus/kursus.html">Kursus
+                            Barista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/reservasi/reservasi.html"><u>Reservasi</u></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" style="color: #3B2621;"
+                            href="../../pages/quiz/quiz-page2.html">Quizz</a>
+                    </li>
+                </ul>
+                <!-- button navbar -->
+                <div class="d-flex align-items-center gap-3">
+                    <a href="../notification/notification.html"
+                        class="btn rounded-pill d-flex align-items-center justify-content-center"
+                        style="width: 40px; height: 40px; background-color: #3B2621;">
+                        <i class="fas fa-bell text-white "></i>
+                    </a>
+                    <a href="../keranjang/keranjang.html" class="btn rounded-pill d-flex align-items-center"
+                        style="background-color: #3B2621;">
+                        <i class="fas fa-shopping-cart text-white me-2"></i>
+                        <span class="badge bg-light text-dark rounded-pill">1</span>
+                    </a>
+                    <a href="../profile/bio.html" class="btn rounded-pill d-flex align-items-center"
+                        style="background-color: #3B2621;">
+                        <i class="fas fa-user-circle text-white me-2"></i>
+                        <span class="text-white">My Profile</span>
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
+    </nav>
+<!-- konten -->
     <div class="container main-content">
-        <h1 class="mb-3" style="color: #3B2621;">Reservasi Ruangan</h1>
+        <h1 class="mb-3 fw-bold" style="color: #3B2621;">Reservasi Ruangan</h1>
         <p class="mb-5" style="color: #3B2621;">Reservasi ruangan yang mudah dan cepat, memastikan ketersediaan sesuai
             kebutuhan Anda.</p>
 
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <a href="reservasi-detail.html"><img src="image/reservasi1.png" class="card-img-top"
-                            alt="Meeting Room 1"></a>
+                    <a href="../../pages/reservasi/reservasi-detail.html"><img src="../../image/reservasi1.png"
+                            class="card-img-top" alt="Meeting Room 1"></a>
                     <div class="card-body" style="color: #3B2621;">
                         <h5 class="card-title">Meeting Room 1</h5>
                         <p class="card-text">Ruang rapat yang modern dan nyaman, cocok untuk diskusi produktif.</p>
@@ -115,7 +127,8 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="image/reservasi1.png" class="card-img-top" alt="Meeting Room 2">
+                    <a href="../../pages/reservasi/reservasi-detail.html"><img src="../../image/reservasi1.png"
+                            class="card-img-top" alt="Meeting Room 2"></a>
                     <div class="card-body" style="color: #3B2621;">
                         <h5 class="card-title">Meeting Room 2</h5>
                         <p class="card-text">Ruang rapat yang modern dan nyaman, cocok untuk diskusi produktif.</p>
@@ -131,7 +144,8 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="image/reservasi1.png" class="card-img-top" alt="Meeting Room 3">
+                    <a href="../../pages/reservasi/reservasi-detail.html"><img src="../../image/reservasi1.png"
+                            class="card-img-top" alt="Meeting Room 3"></a>
                     <div class="card-body" style="color: #3B2621;">
                         <h5 class="card-title">Meeting Room 3</h5>
                         <p class="card-text">Ruang rapat yang modern dan nyaman, cocok untuk diskusi produktif.</p>
@@ -157,7 +171,7 @@
                 <div class="modal-body">
                     <div class="body d-flex">
                         <div class="main-image my-4 mx-3">
-                            <img src="image/reservasi1.png" class="img-fluid w-100 h-75" alt="Meeting Room">
+                            <img src="../../image/reservasi1.png" class="img-fluid w-100 h-75" alt="Meeting Room">
                         </div>
                         <div class="teks m-4">
                             <h5 class="fw-bold">Meeting Room</h5>
@@ -204,30 +218,30 @@
         </div>
     </div>
 
-    <!-- footer -->  
-<footer class="footer text-white p-3" style="background-color: #001804;">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-4 mb-4 mb-md-0">
-                <div class="footer-logo">
-                    <img src="image/Logofooter.png" alt="feelectric Logo" class="img-fluid mb-3">
-                    <p>A combination of Indonesia's authentic coffee with electric bicycle.</p>
+    <!-- footer -->
+    <footer class="footer text-white p-3" style="background-color: #001804;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="footer-logo">
+                        <img src="../../image/Logofooter.png" alt="feelectric Logo" class="img-fluid">
+                        <p>A combination of Indonesia's authentic coffee with electric bicycle.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3>Office</h3>
+                    <p>Jl. BSD Green Office Park, BSD<br>Kecamatan Tangerang, Banten<br>15345 Indonesia</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p><i class="fab fa-whatsapp"></i> +6281388881111<br><i class="fab fa-instagram"></i>
+                        info@feelectric.com<br><i class="fa-regular fa-envelope"></i></i> feelectric@gmail.com</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4 mb-md-0">
-                <h3>Office</h3>
-                <p>Jl. BSD Green Office Park, BSD<br>Kecamatan Tangerang, Banten<br>15345 Indonesia</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Contact Us</h3>
-                <p><i class="fab fa-whatsapp"></i> +6281388881111<br><i class="fab fa-instagram"></i>
-                    info@feelectric.com<br><i class="fa-regular fa-envelope"></i> feelectric@gmail.com</p>
-            </div>
         </div>
-    </div>
-    <hr class="my-4">
-    <p class="text-center">©2024 feelectric. All Rights Reserved.</p>
-  </footer>
+        <hr class="my-4">
+        <p class="text-center">©2024 feelectric. All Rights Reserved.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
