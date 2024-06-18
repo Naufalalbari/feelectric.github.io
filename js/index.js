@@ -1,10 +1,10 @@
 // register
 function togglePasswordVisibility(inputId) {
     var input = document.getElementById(inputId);
-    var icon = input.nextElementSibling;  // Adjust this if the icon is not directly next to the input in the HTML structure.
+    var icon = input.nextElementSibling;  // Assuming the icon is next to the input
     if (input.type === 'password') {
         input.type = 'text';
-        icon.classList.replace('fa-eye', 'fa-eye-slash');  // Using 'replace' to switch classes.
+        icon.classList.replace('fa-eye', 'fa-eye-slash');
     } else {
         input.type = 'password';
         icon.classList.replace('fa-eye-slash', 'fa-eye');
@@ -13,9 +13,9 @@ function togglePasswordVisibility(inputId) {
 
 
 // login
-function togglePasswordVisibility(inputId, iconId) {
+function togglePasswordVisibility(inputId) {
     var input = document.getElementById(inputId);
-    var icon = document.getElementById(iconId);
+    var icon = input.nextElementSibling;  // Assuming the icon is next to the input
     if (input.type === 'password') {
         input.type = 'text';
         icon.classList.replace('fa-eye', 'fa-eye-slash');
